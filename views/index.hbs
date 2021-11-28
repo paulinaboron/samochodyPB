@@ -1,0 +1,40 @@
+
+<form action="/form" method="get">
+<div id="dane">
+    <h2>Dane pojazdu:</h2>
+    <table>
+        {{#each dane}}
+        <tr>
+            <td class="blue">{{this}}</td>
+            <td><input type="checkbox" name={{this}} id=""></td>
+        </tr>
+        {{/each}}
+    </table>
+    <input type="submit" value="Dodaj do bazy" id="subm">
+
+</div>
+
+<div id="pojazdy">
+    <h2>Wszystkie pojazdy:</h2>
+    <table>
+        <thead>
+            {{#each dane}}
+            <td>{{this}}</td>
+            {{/each}}
+        </thead>
+
+        {{#each wszystkie}}
+        <tr>
+            <td>{{a}}</td>
+            <td>{{b}}</td>
+            <td>{{c}}</td>
+            <td>{{d}}</td>
+
+            <td>
+                <button formaction='/usun' value={{_id}} name="btn">Usuń</button>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+</form>

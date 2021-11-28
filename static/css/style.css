@@ -1,0 +1,46 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#dane{
+    float: left;
+    margin-left: 100px;
+}
+
+#pojazdy{
+    float: left;
+    margin-left: 100px
+}
+
+.blue, #cancel, #edit{
+    color: blue;
+}
+
+#delete{
+    color: red;
+}
+
+#update{
+    color: magenta;
+}
+
+#subm{
+    color: blue;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+.sel{
+    display: none;
+}

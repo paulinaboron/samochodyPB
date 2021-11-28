@@ -1,0 +1,29 @@
+<tr>
+    <td>{{@index}}</td>
+    <td><select name='ubezpieczony'>
+            <option value='on'>TAK</option>
+            <option value='off'>NIE</option>
+        </select>
+    </td>
+    <td><select name='benzyna'>
+            <option value='on'>TAK</option>
+            <option value='off'>NIE</option>
+        </select>
+    </td>
+    <td><select name='uszkodzony'>
+            <option value='on'>TAK</option>
+            <option value='off'>NIE</option>
+        </select>
+    </td>
+    <td><select name='naped'>
+            <option value='on'>TAK</option>
+            <option value='off'>NIE</option>
+        </select>
+    </td>
+    <td>
+        <button value={{_id}} name="update" id="update" formaction='/update'>Update</button>
+    </td>
+    <td>
+        <button formaction='/cancel' value={{_id}} name="cancel" id="cancel">Cancel</button>
+    </td>
+</tr>

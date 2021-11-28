@@ -1,0 +1,44 @@
+<form action="/form" method="get">
+    <div id="dane">
+        <h2>Dane pojazdu:</h2>
+        <table>
+            {{#each dane}}
+            <tr>
+                <td class="blue">{{this}}</td>
+                <td><input type="checkbox" name={{this}} id=""></td>
+            </tr>
+            {{/each}}
+        </table>
+        <input type="submit" value="Dodaj do bazy" id="subm">
+
+    </div>
+
+    <div id="pojazdy">
+        <h2>Wszystkie pojazdy:</h2>
+        <table>
+            <thead>
+                <td></td>
+                {{#each dane}}
+                <td>{{this}}</td>
+                {{/each}}
+            </thead>
+
+            {{#each wszystkie}}
+            {{#if id}}
+            {{>row}}
+            {{else}}
+            {{>select}}
+            {{/if}}
+            {{/each}}
+        </table>
+    </div>
+</form>
+
+
+
+<script>
+    function myFunction() {
+        var r = confirm("Czy chcesz usunąć?");
+    }
+
+</script>
